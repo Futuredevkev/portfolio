@@ -4,9 +4,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -33,7 +31,7 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 py-10">
             <div className="mx-auto bg-gradient-to-b from-red-500 rounded-full h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" alt="" />
+              <Image src={'/dev-ed-wave.png'} layout="fill" objectFit="cover" alt="" />
             </div>
 
             <h2 className="text-5xl py-2 text-red-600 font-medium dark:text-red-400 md:text-6xl">
@@ -121,7 +119,7 @@ export default function Home() {
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
-                  src={web1}
+                  src={'/web1.PNG'}
                   alt="Screenshot of Johngelos website"
                 />
               </a>
@@ -133,7 +131,7 @@ export default function Home() {
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
-                  src={web2}
+                  src={'/web2.PNG'}
                   alt="Screenshot of MM Fotosuy website"
                 />
               </a>
@@ -149,7 +147,7 @@ export default function Home() {
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
-                  src={web3}
+                  src={'/web3.PNG'}
                   alt="Screenshot of Note Happy website"
                 />
               </a>
